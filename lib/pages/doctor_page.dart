@@ -1,4 +1,6 @@
 
+// ignore_for_file: unused_import
+
 import 'package:badges/badges.dart';
 import 'package:doctor_app/data/json.dart';
 import 'package:doctor_app/pages/doctor_profile_page.dart';
@@ -61,17 +63,17 @@ class _DoctorPageState extends State<DoctorPage> {
                     children: List.generate(chatsData.length, (index) => 
                      Padding(
                        padding: const EdgeInsets.only(right: 10),
-                       child: Badge(
-                          badgeColor: Colors.green,
-                          borderSide: BorderSide(color: Colors.white),
-                          position: BadgePosition.topEnd(top: -3, end: 0),
-                          badgeContent: Text(''),
+                       //child: Badge(
+                        //  badgeColor: Colors.green,
+                        //  borderSide: BorderSide(color: Colors.white),
+                        //  position: BadgePosition.topEnd(top: -3, end: 0),
+                        //  badgeContent: Text(''),
                           child: AvatarImage(chatsData[index]["image"].toString())
                         ),
                      ) 
                     )
                   ),
-                ),
+                //),
                 SizedBox(height: 20,),
                 getDoctorList()
               ]

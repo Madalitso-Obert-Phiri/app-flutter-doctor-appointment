@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import, duplicate_ignore
+
 import 'package:badges/badges.dart';
 import 'package:doctor_app/data/json.dart';
 import 'package:doctor_app/theme/colors.dart';
@@ -5,6 +7,7 @@ import 'package:doctor_app/widgets/category_box.dart';
 import 'package:doctor_app/widgets/popular_doctor.dart';
 import 'package:doctor_app/widgets/textbox.dart';
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 class HomePage extends StatefulWidget {
@@ -26,12 +29,12 @@ class _HomePageState extends State<HomePage> {
         actions: [
           Container(
             padding: EdgeInsets.only(right: 10),
-            child: Badge(
-              position: BadgePosition.topEnd(top: 7, end: -4),
-              badgeContent: Text('1', style: TextStyle(color: Colors.white),),
-              child: Icon(Icons.notifications_sharp, color: primary,),
+           // child:Badge(
+           //   position: BadgePosition.topEnd(top: 7, end: -4),
+           //   badgeContent: Text('1', style: TextStyle(color: Colors.white),),
+            //  child: Icon(Icons.notifications_sharp, color: primary,),
             ),
-          )
+          //)
         ],
       ),
       body: getBody(),

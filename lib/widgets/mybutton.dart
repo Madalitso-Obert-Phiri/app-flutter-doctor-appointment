@@ -1,4 +1,6 @@
 
+// ignore_for_file: unused_local_variable
+
 import 'package:doctor_app/theme/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +14,11 @@ class MyButton extends StatelessWidget {
   final IconData? icon;
   final bool disableButton;
   final bool isLoading;
+  
 
   @override
   Widget build(BuildContext context) {
+    var buttonColor;
     return 
       AbsorbPointer(
         absorbing: disableButton,
@@ -24,10 +28,10 @@ class MyButton extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(13),
-                color: disableButton ? Theme.of(context).buttonColor.withOpacity(0.3) : bgColor,
+               // color: disableButton ? Theme.of(context).buttonColor.withOpacity(0.3) : bgColor,
                 boxShadow: [
                   BoxShadow(
-                    color: Theme.of(context).shadowColor.withOpacity(0.1),
+                    color: Colors.black.withOpacity(0.3),
                     spreadRadius: 2,
                     blurRadius: 3,
                     offset: Offset(0, 3), // changes position of shadow
@@ -58,4 +62,6 @@ class MyButton extends StatelessWidget {
       )
       ;
   }
+
+  dynamic get buttonColor => buttonColor;
 }

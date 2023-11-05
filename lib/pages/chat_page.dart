@@ -52,7 +52,7 @@ class _ChatPageState extends State<ChatPage> {
                     children: List.generate(chatsData.length, (index) => 
                      Padding(
                        padding: const EdgeInsets.only(right: 10),
-                       child: Badge(
+                       child: badge(
                           badgeColor: Colors.green,
                           borderSide: BorderSide(color: Colors.white),
                           position: BadgePosition.topEnd(top: -3, end: 0),
@@ -80,4 +80,6 @@ class _ChatPageState extends State<ChatPage> {
         )
       );
   }
+  
+  badge({required MaterialColor badgeColor, required BorderSide borderSide, required BadgePosition position, required Text badgeContent, required AvatarImage child}) async {}
 }

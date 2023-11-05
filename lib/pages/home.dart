@@ -1,5 +1,4 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
-import 'package:doctor_app/pages/account_page.dart';
 import 'package:doctor_app/pages/chat_page.dart';
 import 'package:doctor_app/theme/colors.dart';
 import 'package:flutter/cupertino.dart';
